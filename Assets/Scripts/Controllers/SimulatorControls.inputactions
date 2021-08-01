@@ -935,17 +935,6 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "bed5fb37-63ac-4233-850e-a9e14a6a203b",
-                    "path": "<HID::Logitech G920 Driving Force Racing Wheel for Xbox One>/stick/y",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Accel",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "e46b7fbe-610e-4421-a188-f631133056e7",
                     "path": "<Linux::LogitechInc::LogitechG920DrivingForceRacingWheel>/Stick/y",
                     "interactions": "",
@@ -957,12 +946,12 @@
                 },
                 {
                     "name": "",
-                    "id": "9556cee8-daea-4154-b0b5-39cf87329e20",
-                    "path": "<HID::Logitech G920 Driving Force Racing Wheel for Xbox One>/stick/x",
+                    "id": "1ca6aec1-7c87-48d2-afcf-df31721e8f4a",
+                    "path": "<HID::Logitech G29 Driving Force Racing Wheel>/rz",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Steer",
+                    "action": "Accel",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -979,8 +968,19 @@
                 },
                 {
                     "name": "",
-                    "id": "62d31aaa-3ef4-44f1-aa07-65401643ca96",
-                    "path": "<HID::Logitech G920 Driving Force Racing Wheel for Xbox One>/z",
+                    "id": "17783742-8f16-486d-ba7a-6a4c423b30fc",
+                    "path": "<HID::Logitech G29 Driving Force Racing Wheel>/stick/x",
+                    "interactions": "",
+                    "processors": "Scale(factor=2),StickDeadzone(min=0.025,max=0.97)",
+                    "groups": "",
+                    "action": "Steer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9c4a7659-7989-4829-a2bb-b6067a77b358",
+                    "path": "<Linux::LogitechInc::LogitechG920DrivingForceRacingWheel>/Z",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -990,8 +990,8 @@
                 },
                 {
                     "name": "",
-                    "id": "9c4a7659-7989-4829-a2bb-b6067a77b358",
-                    "path": "<Linux::LogitechInc::LogitechG920DrivingForceRacingWheel>/Z",
+                    "id": "ffc3066f-efbb-464f-b16c-8a9361e52945",
+                    "path": "<HID::Logitech G29 Driving Force Racing Wheel>/stick/up",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

@@ -104,9 +104,11 @@ namespace Simulator.Network.Master
         /// <returns>The peer manager that received the load, null if master machine received it</returns>
         public IPeerManager AppendLoad(float load, bool includeMaster)
         {
+            Log.Info("load:"+load+", includeMaster:"+includeMaster+", clientLoads:"+clientLoads);
             IPeerManager lowestPeer = null;
             foreach (var clientLoad in clientLoads)
             {
+                Log.Info("clientLoad.Key.Identifier:"+clientLoad.Key.Identifier);
                 if (lowestPeer == null || clientLoad.Value < clientLoads[lowestPeer])
                 {
                     lowestPeer = clientLoad.Key;
@@ -127,6 +129,7 @@ namespace Simulator.Network.Master
             }
 
             clientLoads[lowestPeer] = clientLoads[lowestPeer] + load;
+            Log.Info("lowestPeer:"+lowestPeer+", clientLoads[lowestPeer]:"+clientLoads[lowestPeer]);
             return lowestPeer;
         }
 

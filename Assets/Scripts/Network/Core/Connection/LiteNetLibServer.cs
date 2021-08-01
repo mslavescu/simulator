@@ -221,6 +221,7 @@ namespace Simulator.Network.Core.Connection
                 return;
             }
 
+            Log.Info("identifier:"+identifier);
             Log.Info(
                 $"{GetType().Name} received and accepted a connection request from address '{request.RemoteEndPoint.Address}', current UTC time: {DateTime.UtcNow.ToString(CultureInfo.InvariantCulture)}.");
             peers.Add(request.RemoteEndPoint, new LiteNetLibPeerManager(request.Accept(), identifier));

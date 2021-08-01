@@ -118,7 +118,7 @@ namespace Simulator.Sensors
 
         protected RenderTextureReadWrite CameraTargetTextureReadWriteType = RenderTextureReadWrite.sRGB;
 
-        public override SensorDistributionType DistributionType => SensorDistributionType.ClientOnly;
+        public override SensorDistributionType DistributionType => SensorDistributionType.MainOrClient;
         public override float PerformanceLoad { get; } = 1.0f;
 
         protected SensorRenderTarget renderTarget;

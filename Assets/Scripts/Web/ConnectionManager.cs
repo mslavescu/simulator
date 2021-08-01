@@ -220,6 +220,7 @@ public class ConnectionManager : MonoBehaviour
 
         try
         {
+            Debug.Log("CloudRecv-parse: "+s);
             if (s.StartsWith("data:") && !string.IsNullOrEmpty(s.Substring(6)))
             {
                 JObject deserialized = JObject.Parse(s.Substring(5));
@@ -623,6 +624,7 @@ public class CloudAPI
 
         Console.WriteLine($"[CONN] POST {route}");
 
+        Debug.Log("CloudSend-PostApi: "+message);
         var response = await client.SendAsync(message);
 
         Console.WriteLine($"[CONN] HTTP {(int)response.StatusCode} {response.StatusCode}");
